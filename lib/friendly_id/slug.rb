@@ -2,7 +2,7 @@ module FriendlyId
   # A FriendlyId slug stored in an external table.
   #
   # @see FriendlyId::History
-  class Slug < ActiveRecord::Base
+  class Slug < ApplicationRecord
     belongs_to :sluggable, polymorphic: true
 
     def sluggable
